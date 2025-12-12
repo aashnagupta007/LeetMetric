@@ -105,6 +105,11 @@ document.addEventListener("DOMContentLoaded", function(){
             easyLabel.textContent = "--";
             mediumLabel.textContent = "--";
             hardLabel.textContent = "--";
+            
+            document.querySelectorAll('.circle').forEach(c => {
+                c.style.setProperty('--progress', '0%');
+            });
+
             alert("Try another username");
         }
         finally{
